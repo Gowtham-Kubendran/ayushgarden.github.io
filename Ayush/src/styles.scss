@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+html,body
+{
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: RegularF;
+    src: url(assets/fonts/Comfortaa-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: BoldF;
+    src: url(assets/fonts/Comfortaa-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: LightL;
+    src: url(assets/fonts/Comfortaa-Light.ttf);
+  }
+
+  .row
+  {
+    margin:0;
+    padding:0;
+  }

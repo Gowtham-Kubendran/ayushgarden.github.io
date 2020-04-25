@@ -1,0 +1,157 @@
+.header
+{
+    line-height: 5em;
+    font-family: LightF;
+    background: #607D8B;
+    text-align: right;
+    padding-right: 2em;
+    
+}
+.menu{
+    color: white;
+    font-size: 1.3em;
+    transition: 0.2s ease-in-out;
+    margin: 0 0.2em;
+}
+button{
+    background: none;
+    outline: 0;
+    border: 0;
+}
+.menu:hover
+{
+color:black;
+}
+.logoimg
+{
+    width: 80%;
+    padding: 5em 3em 3em 3em;
+    animation: 1s ease-out 0s 1 fadein;
+    
+}
+.LogoText
+{
+    background: url("../../assets/images/ayush.jpg");
+    background-size: cover;
+    height:calc(100vh - 5em);
+    animation: 1s ease-out 0s 1 fadein;
+    
+    
+}
+@keyframes fadein {
+    0% {
+      display: none;
+    }
+    100% {
+        display: block;
+    }
+  }
+
+.center
+{
+    height: calc(100vh - 5em);
+    width: 100%;
+    text-align: center;
+    align-items: center; 
+    overflow:hidden;
+}
+
+.compName
+{
+    color:#8e8e8e;
+    font-size: 5em;
+    font-family: BoldF;
+}
+.titleText
+{
+    margin-top:30%;
+}
+.row
+{
+  margin-left:0 ;
+  margin-right:0 ;
+  padding-left:0;
+  padding-right: 0;
+}
+.serviceTitle
+{
+  width: 100%;
+  text-align: center;
+  font-family: LightL;
+  font-size: 3em;
+  padding: 1em 0 0 0;
+  color: grey;
+}
+.outer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  
+  .child {
+    width: 25em;
+    height: 25em;
+    padding: 3em;
+    margin: auto;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    border-radius: 50%;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 50%;
+  }
+  
+  .flip-card-back {
+    
+    color: grey;
+    border-radius: 50%;
+    padding:3em;
+    transform: rotateY(180deg);
+  }
+  .serviceicon
+  {
+    width:100%;
+    background-color:white;
+    padding:1em;
+    height:100%;
+    border-radius: 50%;
+  }
+  .joinus
+  {
+      background-color: #607D8B;
+      color:white;
+      font-family: LightL;
+      padding:2em;
+      
+
+  }

@@ -1,0 +1,86 @@
+<div class="wrapper">
+  <!-- <div class="header"> -->
+  <!-- <span class="menu">About Us</span>
+  <span class="menu">Join Us</span>
+  <span class="menu">Services</span> -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="./assets/images/home_icon.svg" style="width:2em;" /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="form-inline my-2 my-lg-0">
+          <ul class="navbar-nav mr-auto">
+           
+            <li class="nav-item">
+                <button class="nav-link" (click)="scroll(about)">About Us</button>
+              
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" (click)="scroll(join)">Join Us</button>
+              </li>
+              <li class="nav-item">
+                  <button class="nav-link" (click)="scroll(service)">Services</button>
+                </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!-- </div> -->
+  <div class="LogoText row">
+    
+    <div class=" col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      <img src="../../assets/images/logo.svg" class="logoimg">
+    </div>
+    <div class="center col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      <div class="row titleText">
+
+          <div class="compName  col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"></div>
+          <div class="compName  col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <div>Ayush</div>
+          <div>Garden</div>
+          </div>
+          <div class="compName  col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"></div>
+        
+       
+      </div>
+      
+      
+    </div>
+  </div>
+  <div #service class="service">
+      <div class="serviceTitle">Services</div>
+          <div class="outer">
+        <div class="child" *ngFor="let item of items">
+  <div class="flip-card" >
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="{{item.imgsrc}}" class="serviceicon" style="" alt="Avatar" >
+            </div>
+            <div class="flip-card-back">
+              <h3>{{item.name}}</h3> 
+              <p>{{item.desc}}</p> 
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div #join class="joinus">
+    joinus
+  </div>
+  
+</div>
